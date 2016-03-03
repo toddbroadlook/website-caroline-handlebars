@@ -1,0 +1,59 @@
+<!-- This is a first example of using a template -->
+
+<head>
+
+<!-- include our libraries and css files -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/handlebars-v3.0.3.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="AnimalsData.js"></script>
+<script src="assignment.js"></script>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="assignment.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- put your HTML here -->
+
+	<h1> The Animal Picture Gallery </h1>
+
+
+
+    <ul class="breadcrumb">
+    	<li><a href="#" id="gallery-bread">Home</a></li>
+	</ul>
+
+      <!-- the content section is empty as we will fill it 
+            via javascript and templates -->
+      <div id="content"  class="container-fluid"  role="main">
+      </div>
+
+      <script id="gallery-template" type="text/x-handlebars-template">
+
+		    {{#each category}}    
+	          <div class="caption" >
+	              <a class="gallery-caption" data-id="{{@index}}"> {{name}} </a>
+	          </div>
+
+		    {{/each}}
+		</script>
+        
+        <script id="category-template" type="text/x-handlebars-template">
+
+
+		    {{#each animals}}
+	          <div class="category-caption" data-id="{{@index}}">
+	              <h4> {{name}} </h4>
+                  <img class="crop-img" src="{{image1}}" alt=""/> 
+	          </div>
+
+		    {{/each}}
+
+		</script>
+
+</body>
