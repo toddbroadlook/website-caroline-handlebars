@@ -9,7 +9,7 @@
 var albums_template, photos_template, photo_template, slideshow_template;
 
 // variables to store the current displayed album and photo
-var current_album = gallery.albums[0];
+var current_album = portfolio.categories[0];
 var current_photo = current_album.photos[0];
 
 // a helper function that instantiates a template
@@ -27,13 +27,13 @@ $(document).ready(function(){
 	//
 	// compile all of our templates ready for use
 	//
-	var source   = $("#albums-template").html();
+	var source   = $("#portfolio-mainview-template").html();
 	albums_template = Handlebars.compile(source);
 	
-	source   = $("#photos-template").html();
+	source   = $("#portfolio-pieceview-template").html();
 	photos_template = Handlebars.compile(source);
 	
-	source   = $("#photo-template").html();
+	source   = $("#portfolio-piecedetailview-template").html();
 	photo_template = Handlebars.compile(source);
 	
 
@@ -41,16 +41,16 @@ $(document).ready(function(){
 	//  clicking on the albums tab shows the 
 	//  thumbnails of all the albums
 	//
-	$("#albums-tab").click(function () {
+	$("#portfolio-tab").click(function () {
 
 		// displays the albums template
-		showTemplate(albums_template, gallery);
+		showTemplate(albums_template, portfolio);
 
 		// make the albums tab the active one
 		// first make the currently active tab inactive
 		$(".nav-tabs .active").removeClass("active");
 		// then make albums tab active
-		$("#albums-tab").addClass("active");
+		$("#portfolio-tab").addClass("active");
 
 		// add a click callback to each album 
 		// thumbnail which displays the photos
@@ -71,7 +71,7 @@ $(document).ready(function(){
 			var index = $(this).data("id");
 
 			// set the current album to this album
-			current_album = gallery.albums[index];
+			current_album = portfolio.categories[index];
 
 			// displays the photos template
 			showTemplate(photos_template, current_album);
@@ -134,6 +134,6 @@ $(document).ready(function(){
 	// start the page by showing the albums view
 	// we do this by virtually clicking on the 
 	// albums tab
-	$("#albums-tab").click();
+	$("#portfolio-tab").click();
 
 });

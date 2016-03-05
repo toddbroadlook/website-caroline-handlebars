@@ -19,8 +19,11 @@
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Template Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Project Custom CSS -->
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -58,11 +61,14 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Albums</a>
+                    <li class="page-scroll" id="portfolio-tab">
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">Photos</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Art Education</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -101,12 +107,12 @@
             </div>
             <div class="row">
 			
-			      <!-- the content section is empty as we will fill it 
-					via javascript and templates -->
-				  <div id="content"  class="container-fluid"  role="main">
-				  </div>
+		      <!-- the content section is empty as we will fill it 
+				via javascript and templates -->
+			  <div id="content"  class="container-fluid"  role="main">
+			  </div>
 			
-			
+			    <!--
                 <div class="col-sm-4 portfolio-item">
                     <h4> Murals </h4>
 					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -139,7 +145,7 @@
                         </div>
                         <img src="img/abbieportrait.jpg" class="img-responsive" alt="">
                     </a>
-                </div>
+                </div> --> 
             </div>
         </div>
     </section>
@@ -516,40 +522,26 @@
     <script src="js/freelancer.js"></script>
 
 	<!-- Album Template -->
-	<script id="albums-template" type="text/x-handlebars-template">
+	<script id="portfolio-mainview-template" type="text/x-handlebars-template">
+        {{#each categories}}
 		<div class="col-sm-4 portfolio-item">
 			<h4> {{name}} </h4>
-			<a href="#portfolioModal1" class="portfolio-link album-thumbnail" data-id="{{@index}} data-toggle="modal">
+			<div class="portfolio-link album-thumbnail" data-id="{{@index}}">
 				<div class="caption">
 					<div class="caption-content">
 						<i class="fa fa-search-plus fa-3x"></i>
 					</div>
 				</div>
 				<img src="{{cover}}" class="img-responsive" alt="">
-			</a>
+			</div>
 		</div>
+        {{/each}}
 	
-	
-		  <<!-- <div class="row">
-
-			{{#each albums}}
-			<div class="col-xs-12 col-md-3"> 
-				<div class="album-thumbnail"  data-id="{{@index}}">
-				  <div class="caption">
-					  <h4> {{name}} </h4>
-				  </div>
-				  <img class="crop-img" src="{{thumbnail}}" alt=""/> 
-					
-				 </div>
-			</div> 
-
-			{{/each}}
-
-		  </div>--> <!-- / row -->
+           <!-- / row -->
 	</script>
 
 	<!-- Photo Template -->	
-	<script id="photos-template" type="text/x-handlebars-template">
+	<script id="portfolio-pieceview-template" type="text/x-handlebars-template">
 	  <div class="row">
 		<!-- xs-12 : small display shows a single column (taking up 12 grid columns)-->
 		<!-- md-3 : medium and up displays use 3 grid columns per column -->
@@ -575,7 +567,7 @@
 	<!-- 
 		It is displayed as a large image with title and description
 	-->
-	<script id="photo-template" type="text/x-handlebars-template">
+	<script id="portfolio-piecedetailview-template" type="text/x-handlebars-template">
 	  <div class="row">
 		<div class="col-xs-12 col-md-12"> 
 			<img class="large-img" src="{{src}}" alt=""/> 

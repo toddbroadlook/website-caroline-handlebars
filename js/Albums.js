@@ -4,30 +4,30 @@
 // (plus a name and a thumbnail image)
 // The photos contain an image src and some metadata
 
-var gallery = {
-	albums : [
+var portfolio = {
+	categories : [
 		{
 			name : "Murals", 
 			thumbnail : "images/img_1.jpg",
 			cover : "img/stlukesmural.jpg",
 			photos : [
 				{	
-					src : "images/img_1.jpg",
+					src : "img/cabin.png",
 					title : "grafitti", 
 					description : "some derelict appartments with grafitti"
 				}, 
 				{	
-					src : "images/img_6.jpg",
+					src : "img/circus.png",
 					title : "fountain", 
 					description : "a huge dragon fountain"
 				}, 
 				{	
-					src : "images/img_7.jpg",
+					src : "img/game.png",
 					title : "tower", 
 					description : "a colourful tower block"
 				}, 
 				{	
-					src : "images/img_8.jpg",
+					src : "img/cake.png",
 					title : "walkways", 
 					description : "an interesting interior"
 				} 
