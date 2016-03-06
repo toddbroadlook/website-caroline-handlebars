@@ -9,8 +9,8 @@
 var albums_template, photos_template, photo_template, slideshow_template;
 
 // variables to store the current displayed album and photo
-var current_album = portfolio.categories[0];
-var current_photo = current_album.photos[0];
+var current_category = portfolio.categories[0];
+var current_photo = current_category.photos[0];
 
 // a helper function that instantiates a template
 // and displays the results in the content div
@@ -36,6 +36,20 @@ $(document).ready(function(){
 	source   = $("#portfolio-piecedetailview-template").html();
 	photo_template = Handlebars.compile(source);
 	
+	Handlebars.registerHelper('grouped_each', function(every, context, options) {
+	    var out = "", subcontext = [], i;
+	    if (context && context.length > 0) {
+	        for (i = 0; i < context.length; i++) {
+	            if (i > 0 && i % every === 0) {
+	                out += options.fn(subcontext);
+	                subcontext = [];
+	            }
+	            subcontext.push(context[i]);
+	        }
+	        out += options.fn(subcontext);
+	    }
+	    return out;
+	});
 
 	// 
 	//  clicking on the albums tab shows the 
@@ -71,10 +85,10 @@ $(document).ready(function(){
 			var index = $(this).data("id");
 
 			// set the current album to this album
-			current_album = portfolio.categories[index];
+			current_category = portfolio.categories[index];
 
 			// displays the photos template
-			showTemplate(photos_template, current_album);
+			showTemplate(photos_template, current_category);
 
 			// add an on click al all the photo thumbnails
 			// which displays the photo in a modal popup
@@ -88,7 +102,7 @@ $(document).ready(function(){
 				var index = $(this).data("id");
 
 				// set the current photo to this photo
-				current_photo = current_album.photos[index];
+				current_photo = current_category.photos[index];
 				
 				// displays the single photo template
 				showTemplate(photo_template, current_photo);
@@ -103,7 +117,7 @@ $(document).ready(function(){
 	$("#photos-tab").click(function () {
 		
 		// displays the photos template
-		showTemplate(photos_template, current_album);
+		showTemplate(photos_template, current_category);
 
 		// make the photos tab the active one
 		// first make the currently active tab inactive
@@ -123,7 +137,7 @@ $(document).ready(function(){
 			var index = $(this).data("id");
 
 			// set the current photo to this photo
-			current_photo = current_album.photos[index];
+			current_photo = current_category.photos[index];
 			
 			// displays the single photo template
 			showTemplate(photo_template, current_photo);
