@@ -281,6 +281,17 @@
 
     <!-- Display all art pieces in a category -->
 	<script id="portfolio-pieceview-template" type="text/x-handlebars-template">
+        <div class="row">
+                <div class="col-lg-2 text-center">
+                    <button type="button" class="btn btn-success btn-lg" id="portfolio-backbutton">
+                        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Portfolio
+                    </button>
+                </div>
+                <div class="col-lg-10 text-center">
+                    <h2>{{name}}</h2>
+                    <hr class="star-primary">
+                </div>
+        </div>
         {{#grouped_each 4 photos}}
 	       <div class="row">
     		<!-- xs-12 : small display shows a single column (taking up 12 grid columns)-->

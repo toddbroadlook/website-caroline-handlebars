@@ -110,6 +110,8 @@ $(document).ready(function(){
 		});
 	});
 
+	$("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+
 	// 
 	//  clicking on the photos tab shows all of the 
 	//  photos in the current album
