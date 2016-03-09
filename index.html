@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Caroline Can Paint</title>
+    <title>Milwaukee Muralist</title>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/handlebars-v3.0.3.js"></script>
@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Caroline Can Paint</a>
+                <a class="navbar-brand" href="#page-top">Milwaukee Muralist</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,12 +96,6 @@
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
             <div class="row">
 			
 		      <!-- the content section is empty as we will fill it 
@@ -263,7 +257,14 @@
 	<!-- Template Section for Handlebars-->
     <!-- Display all categories in the Portfolio -->
 	<script id="portfolio-mainview-template" type="text/x-handlebars-template">
-        {{#each categories}}
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+        </div>
+
+	 {{#each categories}}
 		<div class="col-sm-4 portfolio-item">
 			<h4> {{name}} </h4>
 			<div class="portfolio-link album-thumbnail" data-id="{{@index}}">
