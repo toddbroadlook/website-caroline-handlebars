@@ -90,6 +90,8 @@ $(document).ready(function(){
 			// displays the photos template
 			showTemplate(photos_template, current_category);
 
+            $("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+            
 			// add an on click al all the photo thumbnails
 			// which displays the photo in a modal popup
 			$(".photo-thumbnail").click(function (){
@@ -103,14 +105,17 @@ $(document).ready(function(){
 
 				// set the current photo to this photo
 				current_photo = current_category.photos[index];
-				
+
 				// displays the single photo template
 				showTemplate(photo_template, current_photo);
+                
+                $("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+                $("#category-backbutton").click(function(){ $(".album-thumbnail").click();});
 			});
 		});
 	});
 
-	$("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+	
 
 	// 
 	//  clicking on the photos tab shows all of the 
