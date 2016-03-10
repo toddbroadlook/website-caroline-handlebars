@@ -66,15 +66,8 @@ $(document).ready(function(){
 		// then make albums tab active
 		$("#portfolio-tab").addClass("active");
 
-		// add a click callback to each album 
-		// thumbnail which displays the photos
-		// template on that album
-		// (I have written out the code for this 
-		// function for clarity but it is actually
-		// pretty much the same as the photos tab
-		// function so we could acutally just
-		// call $(".photo-thumbnail").click() ) 
-		$(".album-thumbnail").click(function (){
+
+		$(".category-thumbnail").click(function (){
 			
 			// get the index (position in the array)
 			// of the album we clicked on
@@ -90,11 +83,11 @@ $(document).ready(function(){
 			// displays the photos template
 			showTemplate(photos_template, current_category);
 
-            $("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+            $(".portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
             
 			// add an on click al all the photo thumbnails
 			// which displays the photo in a modal popup
-			$(".photo-thumbnail").click(function (){
+			$(".piece-thumbnail").click(function (){
 				// get the index (position in the array)
 				// of the photo we clicked on
 				// "this" is the element that was clicked on
@@ -109,32 +102,22 @@ $(document).ready(function(){
 				// displays the single photo template
 				showTemplate(photo_template, current_photo);
                 
-                $("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
-                $("#category-backbutton").click(function(){ $(".album-thumbnail").click();});
+                $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
+                $(".category-backbutton").click(function(){ $("#category-tab").click();});
 			});
 		});
 	});
 
-	
+	$("#category-tab").click(function (){
 
-	// 
-	//  clicking on the photos tab shows all of the 
-	//  photos in the current album
-	//
-	$("#photos-tab").click(function () {
-		
 		// displays the photos template
 		showTemplate(photos_template, current_category);
 
-		// make the photos tab the active one
-		// first make the currently active tab inactive
-		$(".nav-tabs .active").removeClass("active");
-		// then make photos tab active
-		$("#photos-tab").addClass("active");
-
+        $("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+        
 		// add an on click al all the photo thumbnails
 		// which displays the photo in a modal popup
-		$(".photo-thumbnail").click(function (){
+		$(".piece-thumbnail").click(function (){
 			// get the index (position in the array)
 			// of the photo we clicked on
 			// "this" is the element that was clicked on
@@ -145,9 +128,12 @@ $(document).ready(function(){
 
 			// set the current photo to this photo
 			current_photo = current_category.photos[index];
-			
+
 			// displays the single photo template
 			showTemplate(photo_template, current_photo);
+            
+            $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
+            $(".category-backbutton").click(function(){ $("#category-tab").click();});
 		});
 	});
 

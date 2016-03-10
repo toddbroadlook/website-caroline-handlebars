@@ -64,6 +64,9 @@
                     <li class="page-scroll" id="portfolio-tab">
                         <a href="#portfolio">Portfolio</a>
                     </li>
+                    <li class="page-scroll hidden" id="category-tab">
+                        <a href="#portfolio">Category</a>
+                    </li>
                     <li class="page-scroll">
                         <a href="#about">Art Education</a>
                     </li>
@@ -266,7 +269,7 @@
 	 {{#each categories}}
 		<div class="col-sm-4 portfolio-item">
 			<h4> {{name}} </h4>
-			<div class="portfolio-link album-thumbnail" data-id="{{@index}}">
+			<div class="portfolio-link category-thumbnail" data-id="{{@index}}">
 				<div class="caption">
 					<div class="caption-content">
 						<i class="fa fa-search-plus fa-3x"></i>
@@ -290,9 +293,10 @@
                 <!-- Button to navigate back to Portfolio -->
         <div class="row">
             <div class="col-lg-2">
-                <button type="button" class="btn btn-success btn-sm" id="portfolio-backbutton">
-                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Portfolio
-                </button>
+                <ol class="breadcrumb">
+                  <li><a href="#portfolio" class="portfolio-backbutton">Portfolio</a></li>
+                  <li class="active">{{name}}</li>
+                </ol>
             </div>
             <div class="col-lg-10"> </div>
         </div>
@@ -303,7 +307,7 @@
                <div class="row">
                 {{#each this}}
                 <div class="col-xs-12 col-md-3"> 
-                 <div class="photo-thumbnail"  data-id="{{@index}}">
+                 <div class="piece-thumbnail"  data-id="{{@index}}">
                     <img class="crop-img" src="{{src}}" alt=""/> 
                       
                      <div class="caption">
@@ -332,14 +336,12 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <!-- Button to navigate back to Portfolio -->
-                <button type="button" class="btn btn-success btn-sm" id="portfolio-backbutton">
-                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Portfolio
-                </button>
-                <!-- Button to navigate back to Category -->
-                <button type="button" class="btn btn-success btn-sm" id="category-backbutton">
-                    <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Category
-                </button>
+
+                <ol class="breadcrumb">
+                  <li><a href="#portfolio" class="portfolio-backbutton">Portfolio</a></li>
+                  <li><a href="#portfolio" class="category-backbutton">Category</a></li>
+                  <li class="active">{{title}}</li>
+                </ol>
             </div>
             <div class="col-lg-8"> </div>
         </div>
