@@ -17,6 +17,7 @@ var current_photo = current_category.photos[0];
 function showTemplate(template, data){
 	var html    = template(data);
 	$('#content').html(html);
+	$('.category-backbutton').html(current_category.name)
 }
 
 // document read gets called when the whole document
