@@ -113,7 +113,7 @@ $(document).ready(function(){
 		// displays the photos template
 		showTemplate(photos_template, current_category);
 
-        $("#portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
+        $(".portfolio-backbutton").click( function(){ $("#portfolio-tab").click();});
         
 		// add an on click al all the photo thumbnails
 		// which displays the photo in a modal popup
