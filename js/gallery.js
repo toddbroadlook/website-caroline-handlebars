@@ -57,7 +57,8 @@ $(document).ready(function(){
 	//  thumbnails of all the albums
 	//
 	$("#portfolio-tab").click(function () {
-
+		if(location.hash != "portfolio")
+			location.hash = "portfolio";
 		// displays the albums template
 		showTemplate(albums_template, portfolio);
 
@@ -69,7 +70,8 @@ $(document).ready(function(){
 
 
 		$(".category-thumbnail").click(function (){
-			
+			if(location.hash != "category")
+				location.hash = "category";
 			// get the index (position in the array)
 			// of the album we clicked on
 			// "this" is the element that was clicked on
@@ -89,6 +91,8 @@ $(document).ready(function(){
 			// add an on click al all the photo thumbnails
 			// which displays the photo in a modal popup
 			$(".piece-thumbnail").click(function (){
+				if(location.hash != "piece")
+					location.hash = "piece";
 				// get the index (position in the array)
 				// of the photo we clicked on
 				// "this" is the element that was clicked on
@@ -110,7 +114,8 @@ $(document).ready(function(){
 	});
 
 	$("#category-tab").click(function (){
-
+		if(location.hash != "category")
+			location.hash = "category";
 		// displays the photos template
 		showTemplate(photos_template, current_category);
 
@@ -125,6 +130,9 @@ $(document).ready(function(){
 			// data("id") gets the attribute data-id
 			// (which we set to the index of the photo in
 			// the array - @index)
+			if(location.hash != "piece")
+				location.hash = "piece";
+
 			var index = $(this).data("id");
 
 			// set the current photo to this photo
@@ -138,10 +146,24 @@ $(document).ready(function(){
 		});
 	});
 
-
+	$(window).on('hashchange', function() {
+    	if (location.hash === "#category")
+    		$("#category-tab").click();
+    	if (location.hash === "#portfolio")
+    		$("#portfolio-tab").click();
+    	if (location.hash === "#piece") {
+    		showTemplate(photo_template, current_photo);
+            
+            $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
+            $(".category-backbutton").click(function(){ $("#category-tab").click();});
+    	}
+    		
+	});
 	// start the page by showing the albums view
 	// we do this by virtually clicking on the 
 	// albums tab
 	$("#portfolio-tab").click();
+
+
 
 });
