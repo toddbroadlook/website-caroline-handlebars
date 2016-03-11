@@ -1,15 +1,11 @@
 // this file contains the data we need for the gallery
-// The main object, "gallery" contains an array of album
-// each album contains an array of photos 
-// (plus a name and a thumbnail image)
-// The photos contain an image src and some metadata
 
 var portfolio = {
 	categories : [
 		{
 			name : "Murals", 
 			cover : "img/stlukesmural.jpg",
-			photos : [
+			pieces : [
 				{	
 					src : "img/cabin.png",
 					title : "grafitti", 
@@ -63,7 +59,7 @@ var portfolio = {
 		{
 			name : "Portraits", 
 			cover: "img/abbieportrait.jpg",
-			photos : [
+			pieces : [
 				{	
 					src : "images/img_4.jpg",
 					title : "syths", 
@@ -84,7 +80,7 @@ var portfolio = {
 		{
 			name : "Landscapes", 
 			cover : "img/hoppercopy.jpg",
-			photos : [
+			pieces : [
 				{	
 					src : "images/img_16.jpg",
 					title : "dog in the snow", 
