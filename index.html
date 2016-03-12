@@ -224,7 +224,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                        Copyright &copy; 
+                        <script type="text/javascript">
+                            var d = new Date()
+                            document.write(d.getFullYear())
+                        </script>
+                        Milwaukee Muralist, All Rights Reserved
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        Website designed and maintained by Todd Schmitt, Milwaukee, WI
                     </div>
                 </div>
             </div>
@@ -344,16 +354,22 @@
 
         <div class="container padded-container">
             <div class="row">
-                <div class="col-xs-12 col-md-12"> 
-                  <img class="large-img" src="{{src}}" alt=""/> 
-                    
-                  <div class="caption">
-                      <h3>{{title}}</h3>
-                      <p>{{description}}</p>
-                      <p>{{long_description}}</p>
-                  </div>
+                <div class="col-xs-9 col-md-9"> 
+                  <img class="large-img" src="{{src}}" alt="" id="main-piece-image"/> 
                 </div> 
-            </div> 
+                <div class="col-xs-3 col-md-3"> 
+                    {{#each closeup_images}}
+                        <div class="container padded-container">
+                            <img class="crop-img" src={{this}} alt="" id="closeup-piece-image" data-id="{{@index}}"/> 
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="caption">
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+                <p>{{long_description}}</p>
+            </div>
         </div>
 	</script>
 	

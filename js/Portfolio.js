@@ -61,18 +61,18 @@ var portfolio = {
 			cover: "img/abbieportrait.jpg",
 			pieces : [
 				{	
-					src : "images/img_4.jpg",
-					title : "syths", 
+					src : "img/abbieportrait.jpg",
+					title : "Abbie", 
 					description : "all workshops should aspire to being this tidy"
 				}, 
 				{	
-					src : "images/img_9.jpg",
-					title : "helmet", 
+					src : "img/stanley.jpg",
+					title : "Stanley", 
 					description : "a sci-fi helmet"
 				}, 
 				{	
-					src : "images/img_12.jpg",
-					title : "drums", 
+					src : "img/linda.jpg",
+					title : "Linda", 
 					description : "a rather nice drum kit"
 				}  
 			]

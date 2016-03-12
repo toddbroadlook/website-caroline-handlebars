@@ -153,6 +153,6 @@ $(document).ready(function(){
 	// albums tab
 	$("#portfolio-tab").click();
 
-
+	window.scrollTo(0, 0);  //Even though we start our in portfolio view we want to show the top of the page 
 
 });
