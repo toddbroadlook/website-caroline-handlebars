@@ -133,8 +133,8 @@ $(document).ready(function(){
             $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
             $(".category-backbutton").click(function(){ $("#category-tab").click();});
             $("#closeup-piece-image").hover(function(){ 
-            	main_piece_image_stash =  $("#main-piece-image").src;
-            	$("#main-piece-image").src = this.src;
+            	main_piece_image_stash =  document.getElementById("main-piece-image").src;
+            	document.getElementById("main-piece-image").src=this.src;
 
             },
             	function(){
@@ -153,14 +153,14 @@ $(document).ready(function(){
             
             $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
             $(".category-backbutton").click(function(){ $("#category-tab").click();});
-            $("#closeup-piece-image").hover(function(){ 
-            	main_piece_image_stash =  $("#main-piece-image").src;
-            	$("#main-piece-image").src = this.src;
+            $(document).on({mouseenter:function(){ 
+            	main_piece_image_stash = document.getElementById("main-piece-image").src;
+            	document.getElementById("main-piece-image").src = this.src;
 
             },
-            	function(){
-            		("#main-piece-image").src = main_piece_image_stash;
-			});
+            	mouseleave:function(){
+            		document.getElementById("main-piece-image").src = main_piece_image_stash;
+			}}, "#closeup-piece-image");
     	}
     		
 	});
