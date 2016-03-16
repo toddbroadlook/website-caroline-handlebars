@@ -7,10 +7,9 @@ var portfolio = {
 			cover : "img/stlukesmural.jpg",
 			pieces : [
 				{	
-					src : "img/cabin.png",
-					title : "grafitti", 
+					src : "img/stlukesmural.jpg",
+					title : "St. Luke's Mural", 
 					description : "some derelict appartments with grafitti",
-					closeup_images : ["img/cabinCloseup1.png","img/cabinCloseup2.png","img/cabinCloseup3.png"],
 					long_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
 				}, 
 				{	
@@ -82,8 +81,9 @@ var portfolio = {
 			cover : "img/hoppercopy.jpg",
 			pieces : [
 				{	
-					src : "images/img_16.jpg",
+					src : "img/hoppercopy.jpg",
 					title : "dog in the snow", 
+					closeup_images : ["img/hoppercopy_Closeup1.jpg"],
 					description : "looks like he needs that jacket"
 				}, 
 				{	

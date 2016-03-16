@@ -1,4 +1,15 @@
-.crop-img{
+.cover-img{
+  max-height:400px;
+  max-width:100%;
+}
+
+
+.thumbnail-img{
+  max-height:400px;
+  max-width:100%;
+}
+
+.small-thumbnail-img{
   max-height:150px;
   max-width:100%;
 }
