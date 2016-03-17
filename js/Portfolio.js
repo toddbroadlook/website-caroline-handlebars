@@ -13,16 +13,18 @@ var portfolio = {
 					long_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
 				}, 
 				{	
-					src : "img/circus.png",
+					src : "img/stlukesmural_largewarm1.jpg",
 					title : "fountain", 
 					description : "a huge dragon fountain",
+					closeup_images : ["img/stlukemural_closeupcool1.jpg", "img/stlukemural_closeupwarm1.jpg"],
 					long_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
 				
 				}, 
 				{	
-					src : "img/game.png",
+					src : "img/stlukesmural_largecool1.jpg",
 					title : "tower", 
 					description : "a colourful tower block",
+					closeup_images : ["img/hoppercopy_Closeup1.jpg"],
 					long_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
 				
 				}, 
