@@ -7,7 +7,8 @@
 // them once on page load and can then use the same compiled 
 // templates many times
 var portfolio_template, category_template, detail_view_template;
-var main_piece_image_stash;
+
+//var main_piece_image_stash;
 // variables to store the current displayed album and photo
 var current_category = portfolio.categories[0];
 var current_piece = current_category.pieces[0];
@@ -132,15 +133,13 @@ $(document).ready(function(){
             
             $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
             $(".category-backbutton").click(function(){ $("#category-tab").click();});
-            $("#closeup-piece-image").hover(function(){ 
-            	main_piece_image_stash =  document.getElementById("main-piece-image").src;
-            	size = main_piece_image_stash.width;
+            $(".closeup-piece-image").mouseover(function(){ 
+            	//main_piece_image_stash =  document.getElementById("main-piece-image").src;
+                var main_image = document.getElementById("main-piece-image");
+            	var size = main_image.width;
             	document.getElementById("main-piece-image").src=this.src;
 				//document.getElementById("main-piece-image").style.max-width = size;
-            },
-            	function(){
-            		document.getElementById("main-piece-image").src = current_piece.src;
-			});
+            });
 		});
 	});
 
@@ -155,18 +154,15 @@ $(document).ready(function(){
             $(".portfolio-backbutton").click(function(){ $("#portfolio-tab").click();});
             $(".category-backbutton").click(function(){ $("#category-tab").click();});
 
-            $("#closeup-piece-image").hover(function(){ 
+            $(".closeup-piece-image").mouseover(function(){ 
             	//main_piece_image_stash =  document.getElementById("main-piece-image").src;
-            	main_image = document.getElementById("main-piece-image");
-            	size = main_image.width;
+            	var main_image = document.getElementById("main-piece-image");
+            	var size = main_image.width;
             	document.getElementById("main-piece-image").src=this.src;
             	if (size < main_image.width)
             		main_image.width = size;
 				//document.getElementById("main-piece-image").style.max-width = size;
-            },
-            	function(){
-            		document.getElementById("main-piece-image").src = current_piece.src;
-			});
+            });
             /*$(document).on({mouseenter:function(){ 
             	main_image = document.getElementById("main-piece-image");
             	size = main_image.width;

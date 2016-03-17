@@ -16,7 +16,7 @@ var portfolio = {
 					src : "img/stlukesmural_largewarm1.jpg",
 					title : "fountain", 
 					description : "a huge dragon fountain",
-					closeup_images : ["img/stlukemural_closeupcool1.jpg", "img/stlukemural_closeupwarm1.jpg"],
+					closeup_images : ["img/stlukesmural_largewarm1.jpg", "img/stlukemural_closeupcool1.jpg", "img/stlukemural_closeupwarm1.jpg", "img/stlukemural_closeupbright1.jpg"],
 					long_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
 				
 				}, 
@@ -24,7 +24,7 @@ var portfolio = {
 					src : "img/stlukesmural_largecool1.jpg",
 					title : "tower", 
 					description : "a colourful tower block",
-					closeup_images : ["img/hoppercopy_Closeup1.jpg"],
+					closeup_images : ["img/stlukesmural_largecool1.jpg", "img/stlukemural_closeupbright2.jpg","img/stlukemural_closeupbright3.jpg","img/stlukemural_closeupbright4.jpg","img/stlukemural_closeupbright5.jpg"],
 					long_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
 				
 				}, 
@@ -85,7 +85,7 @@ var portfolio = {
 				{	
 					src : "img/hoppercopy.jpg",
 					title : "dog in the snow", 
-					closeup_images : ["img/hoppercopy_Closeup1.jpg"],
+					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"],
 					description : "looks like he needs that jacket"
 				}, 
 				{	
