@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Milwaukee Muralist</a>
+                <a class="navbar-brand" href="#page-top">Caroline Beutow</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -279,19 +279,23 @@
           <li class="active">Portfolio</li>
         </ol>
     <div class="container padded-container">
-	   {{#each categories}}
-    		<div class="col-sm-4 portfolio-item">
-    			<h4> {{name}} </h4>
-    			<div class="portfolio-link category-thumbnail" data-id="{{@index}}">
-    				<div class="caption">
-    					<div class="caption-content">
-    						<i class="fa fa-search-plus fa-3x"></i>
-    					</div>
-    				</div>
-    				<img src="{{cover}}" class="cover-img" alt="">
-    			</div>
-    		</div>
-        {{/each}}
+	   {{#grouped_each 3 categories}}
+            <div class="row">
+                {{#each this}}
+        		<div class="col-sm-4 portfolio-item">
+        			<h4> {{name}} </h4>
+        			<div class="portfolio-link category-thumbnail" data-id="{{@index}}">
+        				<div class="caption">
+        					<div class="caption-content">
+        						<i class="fa fa-search-plus fa-3x"></i>
+        					</div>
+        				</div>
+        				<img src="{{cover}}" class="cover-img" alt="">
+        			</div>
+        		</div>
+                {{/each}}
+            </div>
+        {{/grouped_each}}
     </div>
 	</script>
 
@@ -322,7 +326,6 @@
                       
                      <div class="caption">
                         <h3>{{title}}</h3>
-                        <p>{{description}}</p>
                      </div>
                   </div>
                    
@@ -368,7 +371,6 @@
             <div class="caption">
                 <h3>{{title}}</h3>
                 <p>{{description}}</p>
-                <p>{{long_description}}</p>
             </div>
         </div>
 	</script>
