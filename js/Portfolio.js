@@ -77,24 +77,33 @@ var portfolio = {
 		},
 		{
 			name : "Chalk Art", 
-			cover : "img/hoppercopy.jpg",
+			cover : "img/chalk/1.JPG",
 			pieces : [
 				{	
-					src : "img/hoppercopy.jpg",
-					title : "dog in the snow", 
-					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"],
-					description : "looks like he needs that jacket"
+					src : "img/chalk/1.JPG",
+					title : "Mona Lisa", 
+					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"]
 				}, 
 				{	
-					src : "images/img_17.jpg",
-					title : "winter", 
-					description : "a snowy scene in a park"
+					src : "img/chalk/abe.jpg",
+					title : "Abe"
 				}, 
 				{	
-					src : "images/img_18.jpg",
-					title : "frosty pond", 
-					description : "some ducks feeling cold"
-				} 
+					src : "img/chalk/cupid_edited.jpg",
+					title : "Cupid"
+				},
+				{	
+					src : "img/chalk/4.JPG",
+					title : "frosty pond"
+				},
+				{	
+					src : "img/chalk/2.JPG",
+					title : "Bummer"
+				},
+				{	
+					src : "img/chalk/3.JPG",
+					title : "frosty pond"
+				}
 			]
 		}
 		

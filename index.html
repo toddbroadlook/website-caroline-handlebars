@@ -284,7 +284,7 @@
                 {{#each this}}
         		<div class="col-sm-4 portfolio-item">
         			<h4> {{name}} </h4>
-        			<div class="portfolio-link category-thumbnail" data-id="{{@index}}">
+        			<div class="portfolio-link category-thumbnail" data-id="{{@key}}">
         				<div class="caption">
         					<div class="caption-content">
         						<i class="fa fa-search-plus fa-3x"></i>
@@ -321,7 +321,7 @@
                <div class="row">
                 {{#each this}}
                 <div class="col-xs-12 col-md-3"> 
-                 <div class="piece-thumbnail"  data-id="{{@index}}">
+                 <div class="piece-thumbnail"  data-id="{{@key}}">
                     <img class="thumbnail-img" src="{{src}}" alt=""/> 
                       
                      <div class="caption">

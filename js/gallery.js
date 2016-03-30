@@ -39,14 +39,19 @@ $(document).ready(function(){
 	detail_view_template = Handlebars.compile(source);
 	
 	Handlebars.registerHelper('grouped_each', function(every, context, options) {
-	    var out = "", subcontext = [], i;
+	    var out        = '',
+	        subcontext = {}, // Declare an object, instead of an array
+	        i;
 	    if (context && context.length > 0) {
 	        for (i = 0; i < context.length; i++) {
 	            if (i > 0 && i % every === 0) {
 	                out += options.fn(subcontext);
-	                subcontext = [];
+	                subcontext = {};
 	            }
-	            subcontext.push(context[i]);
+	          
+	            // Declare keys on your object,
+	            // instead of blindly pushing into an empty array
+	            subcontext[i] = context[i];
 	        }
 	        out += options.fn(subcontext);
 	    }
