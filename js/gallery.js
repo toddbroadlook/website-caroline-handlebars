@@ -162,11 +162,11 @@ $(document).ready(function(){
             $(".closeup-piece-image").mouseover(function(){ 
             	//main_piece_image_stash =  document.getElementById("main-piece-image").src;
             	var main_image = document.getElementById("main-piece-image");
-            	var size = main_image.width;
+            	//var size = main_image.width;
             	document.getElementById("main-piece-image").src=this.src;
-            	if (size < main_image.width)
-            		main_image.width = size;
-				//document.getElementById("main-piece-image").style.max-width = size;
+            	//if (size < main_image.width)
+            	//	main_image.width = size;
+				
             });
             /*$(document).on({mouseenter:function(){ 
             	main_image = document.getElementById("main-piece-image");
