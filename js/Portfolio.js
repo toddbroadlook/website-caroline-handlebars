@@ -68,17 +68,7 @@ var portfolio = {
 					title : "dog in the snow", 
 					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"],
 					description : "looks like he needs that jacket"
-				}, 
-				{	
-					src : "images/img_17.jpg",
-					title : "winter", 
-					description : "a snowy scene in a park"
-				}, 
-				{	
-					src : "images/img_18.jpg",
-					title : "frosty pond", 
-					description : "some ducks feeling cold"
-				} 
+				}
 			]
 		},
 		{
