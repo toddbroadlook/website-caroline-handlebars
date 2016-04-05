@@ -9,27 +9,27 @@ var portfolio = {
 				{	
 					src : "img/stlukesmural_largecool1.jpg",
 					title : "Noah's Ark", 
-					description : "A mural of Noah's Ark for a local hospital",
+					description : "Noah's Ark,2013,Acrylic, 15'x36'. Illustrative mural created for a Lutheran preschool.",
 					closeup_images : ["img/stlukesmural_largecool1.jpg","img/stlukemural_closeupcool1.jpg","img/stlukemural_closeupbright2.jpg","img/stlukemural_closeupbright3.jpg","img/stlukemural_closeupbright4.jpg"]
 					
 				}, 
 				{	
 					src : "img/mural/school1.JPG",
 					title : "School House", 
-					description : "A scene for a school house -- functional as a mural as well as a place for announcements and featuring a functional mailbox installation.",
+					description : "St. Luke's School House, Acrylic, 2013, 15'x 36'. Functional mural that incorporates a payment mailbox, message boards and an office window. The request for the concrete column to be hidden was accomplished by transforming it into the large oak tree.",
 					closeup_images : ["img/mural/school1.JPG","img/mural/school2.JPG","img/mural/school3.JPG","img/mural/school4.JPG","img/mural/school5.JPG","img/mural/school6.JPG"]
 					
 				},
 				{	
 					src : "img/mural/kim1.JPG",
 					title : "Construction Office", 
-					description : "Play room murals for a children's play area",
-					closeup_images : ["img/mural/kim2.JPG","img/mural/kim3.JPG","img/mural/kim4.JPG","img/mural/kim5.JPG","img/mural/kim6.JPG","img/mural/kim7.JPG","img/mural/kim9.JPG","img/mural/kim10.JPG"]
+					description : "Construction Site and Office, 2016, size varies.  Illustrative mural created for a public children's museum. This mural shows my ability to correct and or repair existing murals. The half of the existing 'construction' image and entire adjoining wall were severely damaged. I was able to match the style of the previous artist to seamlessly recreate half of the 'construction' image as well as create an entirely new set of images on the adjoining wall. Additional images of repaired murals available upon request.",
+                    closeup_images : ["img/mural/kim2.JPG","img/mural/kim3.JPG","img/mural/kim4.JPG","img/mural/kim5.JPG","img/mural/kim6.JPG","img/mural/kim9.JPG","img/mural/kim10.JPG"]
 					
 				},
 					
 				{	
-					src : "img/foo.jpg",
+					src : "img/coming_soon.png",
 					title : "Nursery Rhyme Tea Party", 
 					description : "a colourful tower block"
 				}
@@ -40,20 +40,25 @@ var portfolio = {
 
 		{
 			name : "Portraits", 
-			cover: "img/abbieportrait.jpg",
+			cover: "img/portrait/abbieportrait.jpg",
 			pieces : [
 				{	
-					src : "img/abbieportrait.jpg",
+					src : "img/portrait/abbieportrait.jpg",
 					title : "Abbie", 
 					description : "all workshops should aspire to being this tidy"
 				}, 
 				{	
-					src : "img/stanley.jpg",
+					src : "img/portrait/william.jpeg",
+					title : "William", 
+					description : "\"William\" 2004, pastel on gessoed board, 20\"x30\""
+				}, 
+				{	
+					src : "img/portrait/stanley.jpg",
 					title : "Stanley", 
 					description : "a sci-fi helmet"
 				}, 
 				{	
-					src : "img/linda.jpg",
+					src : "img/portrait/linda.jpg",
 					title : "Linda", 
 					description : "a rather nice drum kit"
 				}  
