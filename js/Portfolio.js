@@ -5,6 +5,7 @@ var portfolio = {
 		{
 			name : "Murals", 
 			cover : "img/stlukesmural.jpg",
+			subtitle : "",
 			pieces : [
 				{	
 					src : "img/stlukesmural_largecool1.jpg",
@@ -31,7 +32,7 @@ var portfolio = {
 				{	
 					src : "img/coming_soon.png",
 					title : "Nursery Rhyme Tea Party", 
-					description : "a colourful tower block"
+					description : ""
 				}
 			]
 		},
@@ -41,11 +42,12 @@ var portfolio = {
 		{
 			name : "Portraits", 
 			cover: "img/portrait/abbieportrait.jpg",
+			subtitle : "",			
 			pieces : [
 				{	
 					src : "img/portrait/abbieportrait.jpg",
 					title : "Abbie", 
-					description : "all workshops should aspire to being this tidy"
+					description : "Abbie, 2002, 18'X20' Oil on Canvas. Commissioned portrait of a little girl given to her mother for mother's day."
 				}, 
 				{	
 					src : "img/portrait/william.jpeg",
@@ -55,67 +57,94 @@ var portfolio = {
 				{	
 					src : "img/portrait/stanley.jpg",
 					title : "Stanley", 
-					description : "a sci-fi helmet"
+					description : "Stanley Tells Knock-Knock Jokes, 2006, 7'x3' Oil on Wood. Part of a pair of portraits used as a part of a gallery show that highlighted some of the eccentric and cherished members of a Chicago church and community outreach program."
 				}, 
 				{	
 					src : "img/portrait/linda.jpg",
 					title : "Linda", 
-					description : "a rather nice drum kit"
-				}  
+					description : "Red Shoes Linda, 2006, 7'x3' Oil on Wood. "
+				},
+				{	
+					src : "img/portrait/pirateportrait.jpg",
+					title : "Andrew", 
+					description : "Commissioned 'Pirate' portraits for a tobacco shop in Chicago. For the launch of a new pirate themed line of tobacco, I filled the store with portraits of pirates."
+				},
+				{	
+					src : "img/portrait/pirateportrait2.jpg",
+					title : "Jimmy", 
+					description : "Commissioned 'Pirate' portraits for a tobacco shop in Chicago. For the launch of a new pirate themed line of tobacco, I filled the store with portraits of pirates."
+				},
+				{	
+					src : "img/portrait/pirateportrait3.jpg",
+					title : "Mystery", 
+					description : "Commissioned 'Pirate' portraits for a tobacco shop in Chicago. For the launch of a new pirate themed line of tobacco, I filled the store with portraits of pirates."
+				},
+				{	
+					src : "img/coming_soon.png",
+					title : "Loretta", 
+					description : ""
+				},
 			]
 		},
 		{
 			name : "Original Work", 
 			cover : "img/hoppercopy.jpg",
+			subtitle : "",			
 			pieces : [
 				{	
 					src : "img/hoppercopy.jpg",
-					title : "dog in the snow", 
-					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"],
-					description : "looks like he needs that jacket"
+					title : "Ground Swell", 
+					closeup_images : ["img/hoppercopy.jpg"],
+					description : "Copy of: 'Ground Swell', by Edward Hopper, 2003, oil on canvas"
 				}
 			]
 		},
 		{
 			name : "Chalk Art", 
 			cover : "img/chalk/abe.jpg",
+			subtitle : "",			
 			pieces : [
 				{	
 					src : "img/chalk/abe.jpg",
-					title : "Abe"
+					title : "Abe",
+					description : "Copy of: 'Young Abe' "
 				}, 
 				{	
 					src : "img/chalk/1.JPG",
 					title : "Mona Lisa", 
-					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"]
+					description : "Copy of: 'Mona Lisa' by Leonardo Da Vinci"
 				}, 
 				{	
 					src : "img/chalk/cupid_edited.jpg",
-					title : "Cupid, Stung by a Bee"
+					title : "Cupid, Stung by a Bee",
+					description : "Copy of: 'Cupid, Stung by a Bee, Is Cherished by his Mother' (1774), by Benjamin West"
 				},
 				{	
 					src : "img/chalk/4.JPG",
-					title : "frosty pond"
+					title : "The Wreck of the Lusitania",
+					description : "Copy of: The Wreck of the Lusitania, 12\" x 12\" Chalk on concrete and aggregate"
 				},
 				{	
 					src : "img/chalk/2.JPG",
-					title : "Bummer"
+					title : "Beach 83",
+					description : "Copy of: Beach 83"
 				},
 				{	
 					src : "img/chalk/3.JPG",
-					title : "frosty pond"
+					title : "Same Damn Thing"
 				}
 			]
 		},
 		{
 			name : "Old Master Copys", 
 			cover : "img/hoppercopy.jpg",
+			subtitle : "My ability to understand and recreate most artistic styles informs my ability to create museum quality copies of masterworks.",			
 			pieces : [
 				{	
 					src : "img/hoppercopy.jpg",
-					title : "dog in the snow", 
-					closeup_images : ["img/hoppercopy.jpg", "img/hoppercopy_Closeup1.jpg"],
-					description : "looks like he needs that jacket"
+					title : "Ground Swell", 
+					closeup_images : ["img/hoppercopy.jpg"],
+					description : "Copy of: 'Ground Swell', by Edward Hopper, 2003, oil on canvas"
 				}
 			]
 		}

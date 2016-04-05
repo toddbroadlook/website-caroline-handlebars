@@ -35,6 +35,13 @@
 .breadcrumb {
   background-color: white;
 }
+
+div.spacer
+{
+    font-size: 0; 
+    height: 50px;
+    line-height: 0;
+}
 /* 
  * uncomment this for some css3 drop shadows and rounded corners.
  */

@@ -180,6 +180,10 @@ $(document).ready(function(){
             		document.getElementById("main-piece-image").src = current_piece.src;
 			}}, "#closeup-piece-image");*/
     	}
+    	if (location.hash != "portfolio") {
+			var divPosition = $('#content').offset();
+	    	$('html, body').animate({scrollTop: divPosition.top}, "slow");
+    	}
     		
 	});
 	// start the page by showing the albums view
@@ -187,6 +191,6 @@ $(document).ready(function(){
 	// albums tab
 	$("#portfolio-tab").click();
 
-	window.scrollTo(0, 0);  //Even though we start our in portfolio view we want to show the top of the page 
+	$('html, body').animate({scrollTop: 0}, "fast");  //Even though we start our in portfolio view we want to show the top of the page 
 
 });
