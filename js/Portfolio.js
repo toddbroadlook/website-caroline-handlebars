@@ -4,14 +4,14 @@ var portfolio = {
 	categories : [
 		{
 			name : "Murals", 
-			cover : "img/stlukesmural.jpg",
+			cover : "img/mural/stlukemural0.jpg",
 			subtitle : "",
 			pieces : [
 				{	
-					src : "img/stlukesmural_largecool1.jpg",
+					src : "img/mural/stlukemural1.jpg",
 					title : "Noah's Ark", 
 					description : "Noah's Ark,2013,Acrylic, 15'x36'. Illustrative mural created for a Lutheran preschool.",
-					closeup_images : ["img/stlukesmural_largecool1.jpg","img/stlukemural_closeupcool1.jpg","img/stlukemural_closeupbright2.jpg","img/stlukemural_closeupbright3.jpg","img/stlukemural_closeupbright4.jpg"]
+					closeup_images : ["img/mural/stlukemural1.jpg","img/mural/stlukemural2.jpg","img/mural/stlukemural3.jpg","img/mural/stlukemural4.jpg","img/mural/stlukemural5.jpg"]
 					
 				}, 
 				{	
@@ -42,7 +42,7 @@ var portfolio = {
 		{
 			name : "Portraits", 
 			cover: "img/portrait/abbieportrait.jpg",
-			subtitle : "",			
+			subtitle : "Painting is an extension of drawing. Drawing and color are not separate, in fact drawing informs a true understanding of color.",			
 			pieces : [
 				{	
 					src : "img/portrait/abbieportrait.jpg",
@@ -84,25 +84,93 @@ var portfolio = {
 					title : "Loretta", 
 					description : ""
 				},
+				{
+					src : "img/portrait/portrait1.jpg",
+					title : "Maggie", 
+					description : " 'Maggie' 2003, charcoal on paper 18\"x24\""
+				},
+				{	
+					src : "img/portrait/portrait2.jpg",
+					title : "Mystery2", 
+					description : ""
+				}
 			]
 		},
 		{
 			name : "Original Work", 
-			cover : "img/hoppercopy.jpg",
-			subtitle : "",			
+			cover : "img/originalwork/sketch4.jpg",
+			subtitle : "'Drawing is the honesty of art' - Jean-Auguste Dominique Ingres.  For me, drawing is everything. Drawing is about the very essence of observation and profound emotional connections. Lines, how they twist and turn, lighten and darken are like words that tell visual stories. For me, the stories I tell are about loneliness, body image and my inherent adoration of other people.",
 			pieces : [
 				{	
-					src : "img/hoppercopy.jpg",
-					title : "Ground Swell", 
-					closeup_images : ["img/hoppercopy.jpg"],
-					description : "Copy of: 'Ground Swell', by Edward Hopper, 2003, oil on canvas"
+					src : "img/originalwork/sketch4.jpg",
+					title : "Sketch 1", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/sketch1.jpg",
+					title : "Sketch 2", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/sketch5.jpg",
+					title : "Sketch 3", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/sketch6.jpg",
+					title : "Sketch 4"
+				},
+				{	
+					src : "img/originalwork/sketch2.jpg",
+					title : "Strangers on a Train 1", 
+					description : "'Strangers on a Train' 2004-2005, graphite on scrap paper, size varies. Series of drawings created over a year long period in which I recorded the people that no one wanted to sit with on the Washington DC metro."
+				},
+				{	
+					src : "img/originalwork/sketch3.jpg",
+					title : "Strangers on a Train 2", 
+					description : "'Strangers on a Train' 2004-2005, graphite on scrap paper, size varies. Series of drawings created over a year long period in which I recorded the people that no one wanted to sit with on the Washington DC metro."
+				},
+				{	
+					src : "img/originalwork/orig_work1.jpg",
+					title : "Painting 1", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/orig_work2.jpg",
+					title : "Painting 2", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/orig_work3.jpg",
+					title : "Painting 3", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/orig_work4.jpg",
+					title : "Painting 4", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/orig_work5.jpg",
+					title : "Painting 5", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/orig_work6.jpg",
+					title : "Painting 6", 
+					description : ""
+				},
+				{	
+					src : "img/originalwork/orig_work7.jpg",
+					title : "Painting 7", 
+					description : ""
 				}
 			]
 		},
 		{
 			name : "Chalk Art", 
 			cover : "img/chalk/abe.jpg",
-			subtitle : "",			
+			subtitle : "In order to encourage patronage of the museum, the Corcoran Gallery of Art in Washington, DC, commissioned me to recreate images from it's permanent collection on the sidewalks of D.C. using children's sidewalk chalk. My chalk art has also been commissioned by The University of Maryland, The Museum of Modern Art in Alexandria, VA and various businesses.",			
 			pieces : [
 				{	
 					src : "img/chalk/abe.jpg",
@@ -132,6 +200,10 @@ var portfolio = {
 				{	
 					src : "img/chalk/3.JPG",
 					title : "Same Damn Thing"
+				},
+				{	
+					src : "img/chalk/5.jpg",
+					title : "Tobacco Pirate"
 				}
 			]
 		},
