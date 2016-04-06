@@ -69,7 +69,7 @@ $(document).ready(function(){
 		showTemplate(portfolio_template, portfolio);
 
 		$(".category-thumbnail").click(function (){
-			if(location.hash != "category")
+			if(location.hash != "#category")
 				location.hash = "category";
 			// get the index (position in the array)
 			// of the category we clicked on
@@ -87,7 +87,7 @@ $(document).ready(function(){
             
 			// add an on click al all the piece thumbnails
 			$(".piece-thumbnail").click(function (){
-				if(location.hash != "piece")
+				if(location.hash != "#piece")
 					location.hash = "piece";
 
 				// "this" is the element that was clicked on
@@ -109,7 +109,7 @@ $(document).ready(function(){
 	});
 
 	$("#category-tab").click(function (){
-		if(location.hash != "category")
+		if(location.hash != "#category")
 			location.hash = "category";
 
 		showTemplate(category_template, current_category);
@@ -173,6 +173,6 @@ $(document).ready(function(){
 	// albums tab
 	$("#portfolio-tab").click();
 
-	//$('html, body').animate({scrollTop: 0}, "fast");  //Even though we start our in portfolio view we want to show the top of the page 
+	window.scrollTo(0, 0).delay(200); //Even though we start our in portfolio view we want to show the top of the page 
 
 });
