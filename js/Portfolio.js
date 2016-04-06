@@ -132,8 +132,8 @@ var portfolio = {
 				},
 				{	
 					src : "img/originalwork/orig_work1.jpg",
-					title : "Painting 1", 
-					description : ""
+					title : "Enough?", 
+					description : "'Enough?' 2004 Oil on Board 3'x3'"
 				},
 				{	
 					src : "img/originalwork/orig_work2.jpg",
@@ -142,8 +142,8 @@ var portfolio = {
 				},
 				{	
 					src : "img/originalwork/orig_work3.jpg",
-					title : "Painting 3", 
-					description : ""
+					title : "Reflection", 
+					description : "'Reflection' 2004, Charcoal and Pastel on Paper, 5'x4' "
 				},
 				{	
 					src : "img/originalwork/orig_work4.jpg",
@@ -152,8 +152,8 @@ var portfolio = {
 				},
 				{	
 					src : "img/originalwork/orig_work5.jpg",
-					title : "Painting 5", 
-					description : ""
+					title : "First Thing in the Morning", 
+					description : "'First Thing in the Morning' 2003 3'x3'"
 				},
 				{	
 					src : "img/originalwork/orig_work6.jpg",
@@ -164,6 +164,11 @@ var portfolio = {
 					src : "img/originalwork/orig_work7.jpg",
 					title : "Painting 7", 
 					description : ""
+				},
+				{	
+					src : "img/originalwork/still_life1.jpg",
+					title : "Lemons and Eggplant", 
+					description : "'Lemons and Eggplant' 2006, oil on board, 8\"x11\""
 				}
 			]
 		},

@@ -164,7 +164,7 @@ $(document).ready(function(){
     	}
     	if (location.hash != "#portfolio") {
 			var divPosition = $('#content').offset();
-	    	$('html, body').animate({scrollTop: divPosition.top}, "slow");
+	    	$('html, body').animate({scrollTop: divPosition.top}, 0);
     	}
     		
 	});
@@ -173,6 +173,6 @@ $(document).ready(function(){
 	// albums tab
 	$("#portfolio-tab").click();
 
-	$('html, body').animate({scrollTop: 0}, "fast");  //Even though we start our in portfolio view we want to show the top of the page 
+	//$('html, body').animate({scrollTop: 0}, "fast");  //Even though we start our in portfolio view we want to show the top of the page 
 
 });
