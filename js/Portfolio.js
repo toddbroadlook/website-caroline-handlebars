@@ -117,10 +117,6 @@ var portfolio = {
 					description : ""
 				},
 				{	
-					src : "img/originalwork/sketch6.jpg",
-					title : "Sketch 4"
-				},
-				{	
 					src : "img/originalwork/sketch2.jpg",
 					title : "Strangers on a Train 1", 
 					description : "'Strangers on a Train' 2004-2005, graphite on scrap paper, size varies. Series of drawings created over a year long period in which I recorded the people that no one wanted to sit with on the Washington DC metro."
@@ -136,29 +132,14 @@ var portfolio = {
 					description : "'Enough?' 2004 Oil on Board 3'x3'"
 				},
 				{	
-					src : "img/originalwork/orig_work2.jpg",
-					title : "Painting 2", 
-					description : ""
-				},
-				{	
 					src : "img/originalwork/orig_work3.jpg",
 					title : "Reflection", 
 					description : "'Reflection' 2004, Charcoal and Pastel on Paper, 5'x4' "
 				},
 				{	
-					src : "img/originalwork/orig_work4.jpg",
-					title : "Painting 4", 
-					description : ""
-				},
-				{	
 					src : "img/originalwork/orig_work5.jpg",
 					title : "First Thing in the Morning", 
 					description : "'First Thing in the Morning' 2003 3'x3'"
-				},
-				{	
-					src : "img/originalwork/orig_work6.jpg",
-					title : "Painting 6", 
-					description : ""
 				},
 				{	
 					src : "img/originalwork/orig_work7.jpg",
