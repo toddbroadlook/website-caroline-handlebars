@@ -76,7 +76,7 @@ var portfolio = {
 				},
 				{	
 					src : "img/portrait/pirateportrait3.jpg",
-					title : "Mystery", 
+					title : "Alberto", 
 					description : "Commissioned 'Pirate' portraits for a tobacco shop in Chicago. For the launch of a new pirate themed line of tobacco, I filled the store with portraits of pirates."
 				},
 				{	
@@ -175,8 +175,8 @@ var portfolio = {
 				},
 				{	
 					src : "img/chalk/4.JPG",
-					title : "The Wreck of the Lusitania",
-					description : "Copy of: The Wreck of the Lusitania, 12\" x 12\" Chalk on concrete and aggregate"
+					title : "",
+					description : "Images of chalk drawings; copies from the former collection of the Corcoran Gallery of Art, Washington, DC."
 				},
 				{	
 					src : "img/chalk/2.JPG",
@@ -185,7 +185,8 @@ var portfolio = {
 				},
 				{	
 					src : "img/chalk/3.JPG",
-					title : "Same Damn Thing"
+					title : "",
+					description : "Images of chalk drawings; copies from the former collection of the Corcoran Gallery of Art, Washington, DC."
 				},
 				{	
 					src : "img/chalk/5.jpg",

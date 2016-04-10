@@ -42,6 +42,17 @@ div.spacer
     height: 50px;
     line-height: 0;
 }
+
+a.txt_link 
+{
+    text-decoration: underline;
+    color: #fff;
+    font-size: 20px;
+}
+
+.glyphicon-inverse {
+  color: #fff;
+}
 /* 
  * uncomment this for some css3 drop shadows and rounded corners.
  */
