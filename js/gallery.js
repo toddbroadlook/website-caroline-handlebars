@@ -173,6 +173,9 @@ $(document).ready(function(){
 	// albums tab
 	$("#portfolio-tab").click();
 
-	window.scrollTo(0, 0).delay(200); //Even though we start our in portfolio view we want to show the top of the page 
+	$(window).load(function(){  //When the page is fully loaded, make sure to go to the top of the page
+		$(window).scrollTop(0);
+		}
+	);
 
 });
