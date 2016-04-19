@@ -3,6 +3,9 @@
   max-width:100%;
 }
 
+#content{
+  overflow:hidden;
+}
 
 .thumbnail-img{
   max-height:400px;
